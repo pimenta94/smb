@@ -1,24 +1,19 @@
 {
   "name": "express-api",
-  "version": "1.2.0",
-  "description": " A basic starter for an express.js API with Typescript",
+  "version": "0.0.0",
+  "description": "smb express api server",
   "main": "src/index.ts",
   "private": true,
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
     "build": "tsc",
-    "lint": "eslint --fix src test",
+    "lint": "eslint --fix src",
     "test": "jest",
-    "typecheck": "tsc --noEmit",
-    "vercel-build": "echo hello"
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
-  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/w3cj/express-api-starter.git"
-  },
+  "author": "pimenta",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
@@ -32,19 +27,16 @@
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.2",
     "@types/morgan": "^1.9.4",
-    "@types/node": "^20.2.5",
+    "@types/node": "^20.4.1",
     "@types/supertest": "^2.0.12",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
-    "@typescript-eslint/parser": "^5.59.9",
+    "config": "*",
     "eslint": "^8.42.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-import": "^2.27.5",
     "jest": "^29.5.0",
     "nodemon": "^2.0.22",
+    "prettier": "2.8.8",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
-    "typescript": "<5.1.0"
+    "typescript": "^5.1.6"
   }
 }

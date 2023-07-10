@@ -6,6 +6,7 @@
   "author": "pimenta",
   "license": "MIT",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ]
 }
