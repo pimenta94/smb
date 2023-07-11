@@ -12,6 +12,9 @@
     "test": "yarn workspaces run test",
     "lint": "yarn workspaces run lint",
     "lint:fix": "yarn workspaces run lint:fix",
+    "lint:ng-app": "yarn workspace ng-app lint",
+    "lint:server": "yarn workspace express-api lint",
+    "typecheck": "yarn workspaces run typecheck",
     "prepare": "husky install"
   },
   "workspaces": [
