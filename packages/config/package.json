@@ -6,6 +6,10 @@
   "files": [
     "eslint-preset.js"
   ],
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",

@@ -5,8 +5,24 @@
   "private": true,
   "author": "pimenta",
   "license": "MIT",
+  "scripts": {
+    "dev": "conc \"yarn workspace express-api dev\" \"yarn workspace ng-app dev\" \"echo ** TEST **\"",
+    "dev:ng-app": "yarn workspace ng-app dev",
+    "dev:server": "yarn workspace express-api dev",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint",
+    "lint:fix": "yarn workspaces run lint:fix",
+    "prepare": "husky install"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "concurrently": "^8.2.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3"
+  }
 }
