@@ -6,7 +6,7 @@
   "author": "pimenta",
   "license": "MIT",
   "scripts": {
-    "dev": "conc \"yarn workspace express-api dev\" \"yarn workspace ng-app dev\" \"echo ** TEST **\"",
+    "start": "conc \"yarn workspace express-api dev\" \"yarn workspace ng-app dev\"",
     "dev:ng-app": "yarn workspace ng-app dev",
     "dev:server": "yarn workspace express-api dev",
     "test": "yarn workspaces run test",
