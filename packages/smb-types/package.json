@@ -1,0 +1,17 @@
+{
+  "name": "smb-types",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "echo skip typecheck"
+  },
+  "author": "Pimenta",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
