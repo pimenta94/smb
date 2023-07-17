@@ -1,2 +1,1 @@
-export * from './src/declaration1';
-export * from './src/declaration2';
+export * from './src/Activity';

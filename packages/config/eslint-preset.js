@@ -14,7 +14,6 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'imports/extensions': 'off',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -23,6 +22,7 @@ module.exports = {
         vars: 'local',
       },
     ],
+    '@typescript-eslint/no-confusing-void-expression': 'off',
     'import/no-duplicates': 'error',
     'import/order': [
       'error',
