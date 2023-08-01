@@ -1,25 +1,16 @@
 import React, { FC } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import Root from './pages/root';
-import Home from './pages/home';
-import Services from './pages/services';
+import Root from './pages/root/Root';
+import HomeRoutes from './pages/home';
+import ServicesRoutes from './pages/services';
 
 const router = createBrowserRouter(
   [
     {
       path: '/',
       element: <Root />,
-      children: [
-        {
-          path: '',
-          element: <Home />,
-        },
-        {
-          path: 'servicos',
-          element: <Services />,
-        },
-      ],
+      children: [...HomeRoutes(), ...ServicesRoutes()],
     },
   ],
   { basename: '/' }

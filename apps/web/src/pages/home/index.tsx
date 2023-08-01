@@ -1,7 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-const Home: FC = () => {
-  return <div>HomePage Works !!</div>;
-};
+import { RouteObject } from 'react-router-dom';
 
-export default Home;
+import Home from './Home';
+
+export default (): RouteObject[] => [
+  {
+    path: '',
+    element: <Home />,
+  },
+];

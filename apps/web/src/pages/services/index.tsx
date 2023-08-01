@@ -1,7 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-const Services: FC = () => {
-  return <div>ServicesPage Works !!</div>;
-};
+import { RouteObject } from 'react-router-dom';
 
-export default Services;
+import Services from './Services';
+
+export default (): RouteObject[] => [
+  {
+    path: 'servicos',
+    element: <Services />,
+  },
+];
