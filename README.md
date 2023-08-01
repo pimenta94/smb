@@ -18,7 +18,7 @@ Install smb with yarn
 ### Apps:
 
 - `Express API`: A node.js server using express framework
-- `Angular App`: Frontend application using Angular 
+- `React App`: Frontend application using React 
 
 ### Packages:
 
