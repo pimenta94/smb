@@ -1,21 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { Global } from '@emotion/react';
 
-import logo from './logo.svg';
+import globalStyles from './theme/global.styles';
+import { Routes } from './routes';
 
-import './App.css';
-
-import { Button } from './App.styles';
-
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>FP Gym Lab ready to GO!</p>
-        <Button>Touch me for some magic 😘</Button>
-      </header>
-    </div>
+    <>
+      <Global styles={globalStyles} />
+      <Routes />
+    </>
   );
-}
+};
 
 export default App;
