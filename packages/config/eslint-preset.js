@@ -6,7 +6,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
   ],
@@ -40,12 +39,9 @@ module.exports = {
       },
     ],
   },
-  parserOptions: {
-    project: ['./tsconfig.json'],
-  },
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts'],
+    'import/resolver': {
+      typescript: {},
     },
   },
   ignorePatterns: ['**/*.js', 'node_modules', 'dist', 'coverage'],
