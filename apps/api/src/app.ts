@@ -4,7 +4,7 @@ import morgan from 'morgan';
 // import cors from 'cors';
 
 import * as middlewares from './middlewares';
-import api from './api';
+import routes from './routes';
 
 import type MessageResponse from './interfaces/MessageResponse';
 
@@ -23,7 +23,7 @@ app.get<MessageResponse>('/', (req, res) => {
   });
 });
 
-app.use('/api/v1', api);
+app.use('/api/', routes);
 
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);

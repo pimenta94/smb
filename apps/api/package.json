@@ -1,5 +1,5 @@
 {
-  "name": "express-api",
+  "name": "api",
   "version": "0.0.0",
   "description": "smb express api server",
   "main": "src/index.ts",
@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
+    "lint:fix": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit"
   },

@@ -9,7 +9,7 @@
     ],
     "scope-empty": [2, "never"],
     "scope-case": [2, "always", "lower-case"],
-    "scope-enum": [2, "always", ["setup", "fp-gym-lab", "ng-app", "api"]],
+    "scope-enum": [2, "always", ["base", "web", "api"]],
     "subject-case": [2, "always", "sentence-case"]
   }
 }
