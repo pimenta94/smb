@@ -18,6 +18,6 @@ export default css`
   }
 
   main {
-    margin: 16px 24px;
+    margin-top: var(--mobile-header-height);
   }
 `;
